@@ -8,4 +8,7 @@ public class MusicienTrompette implements InterfaceMusicien  {
 		listePartition.add(p);
 		System.out.println(this + " possède une nouvelle partition.");
 	}
+	
+	public String returnType() {return instrument;}
+	public int nombrePartition() { return listePartition.size(); }
 }

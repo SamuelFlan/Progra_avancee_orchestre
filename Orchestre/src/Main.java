@@ -12,6 +12,7 @@ public class Main {
 		
 		// On instancie le serveur
 		Serveur serv = new Serveur();
+		System.out.println(serv.nombreMusicien());
 		
 		// On ajoute les musiciens au serveur
 		serv.ajouteMusicien(mTrompette);

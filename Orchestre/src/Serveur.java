@@ -19,19 +19,21 @@ public class Serveur {
 		listeMusicien.remove(m);
 	}
 	
+	// Sauvegarde d'une partition dans le serveur + notification avec une partition auprès des musiciens
 	public void sauvegardePartition(Partition p) {
 		listePartition.add(p);
 		notifierMusiciens(p);
 	}
 	
+	// Sauvegarde d'une partition auprès de chaque musicien
 	public void notifierMusiciens(Partition p) {
 		for(InterfaceMusicien m : listeMusicien) {
 			m.notificationPartition(p);
 		}
 	}
 	
-	public int nombreMusicien()  { return listeMusicien.size();  }
-	public int nombrePartition() { return listePartition.size(); }
+	public int nombreMusicien()  { return listeMusicien.size();  } // Nombre de musiciens
+	public int nombrePartition() { return listePartition.size(); } // Nombre de partitions
 	
-	public final static Serveur getInstance() { return instance; }
+	public final static Serveur getInstance() { return instance; } 
 }

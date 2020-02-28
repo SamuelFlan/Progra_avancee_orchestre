@@ -23,6 +23,7 @@ public class Main {
 		Partition p1 = new Partition("Fist part", 'G');
 		Partition p2 = new Partition("In the hall of the moutain king", 'C');
 		
+		// on les enregistre auprès des musiciens. Ils nous renvoient via la console qu'ils l'ont reçue
 		serv.sauvegardePartition(p1);
 		serv.sauvegardePartition(p2);
 		
